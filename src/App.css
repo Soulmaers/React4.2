@@ -2,37 +2,70 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.workout {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.workoutInput {
+  display: flex;
+  flex-flow: column;
+  margin-right: 10px;
+  align-items: start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.workoutTitle {
+  font-size: 14px;
+  margin: 10px;
+}
+
+.workoutValue {
+  box-sizing: border-box;
+  height: 50px;
+  width: 150px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: rgb(83, 91, 105);
+  padding: 10px;
+}
+
+.workoutAdd {
+  height: 50px;
+  width: 50px;
+  margin-top: auto;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.result {
+  width: 370px;
+  margin: auto;
+}
+
+.resultTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resultList {
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.resultItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+button {
+  border: 0px;
+  background: white;
 }
